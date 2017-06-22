@@ -57,16 +57,18 @@
 //   animation-duration: 2000ms;
 // }
 
-#animateMain {
-  @include mui-series {
-    h1 {
-      @include mui-queue(1s, 0, slide(in, 50px, fade(0,1)));
-    }
-    .subheader {
-      @include mui-queue(1s, 0, slide(in, 50px, fade(0,1)));
-    }
-    p {
-      @include mui-queue(1s, 0, slide(in, 50px, fade(0,1)));
-    }
-  }
-}
+
+//this is not working, it throws an error
+// #animateMain {
+//   @include mui-series {
+//     h1 {
+//       @include mui-queue(1s, 0, slide(in, 50px, fade(0,1)));
+//     }
+//     .subheader {
+//       @include mui-queue(1s, 0, slide(in, 50px, fade(0,1)));
+//     }
+//     p {
+//       @include mui-queue(1s, 0, slide(in, 50px, fade(0,1)));
+//     }
+//   }
+// }
